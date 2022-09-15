@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap);
+@import "fonts";
+$fontFamily: "Heebo";
+$maxWidth: 1152;
+$maxWidthContainer: 856;
+$md1: $maxWidthContainer+12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+/*****Main greed*****/
+
+.container {
+    max-width: $maxWidthContainer;
+    margin: 0, auto;
+    @media(max-width: $md1) {
+        max-width: 970px;
+    }
+    @media(max-width: $md2) {
+        max-width: 750px;
+    }
+    @media(max-width: $md3) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+
+
+/*****End Main greed*****/
